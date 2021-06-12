@@ -1,0 +1,16 @@
+05-06-2021:13:05:59 DEBUG    [loggingPython.py:83] This is a debug log
+05-06-2021:13:05:59 INFO     [loggingPython.py:84] This is an info log
+05-06-2021:13:05:59 CRITICAL [loggingPython.py:85] This is critical
+05-06-2021:13:05:59 ERROR    [loggingPython.py:86] An error occurred
+05-06-2021:13:06:14 DEBUG    [loggingPython.py:82] This is a debug log
+05-06-2021:13:06:14 INFO     [loggingPython.py:83] This is an info log
+05-06-2021:13:06:14 CRITICAL [loggingPython.py:84] This is critical
+05-06-2021:13:06:14 ERROR    [loggingPython.py:85] An error occurred
+05-06-2021:13:06:53 DEBUG    [loggingPython.py:82] This is a debug log
+05-06-2021:13:06:53 INFO     [loggingPython.py:83] This is an info log
+05-06-2021:13:06:53 CRITICAL [loggingPython.py:84] This is critical
+05-06-2021:13:06:53 ERROR    [loggingPython.py:85] An error occurred
+05-06-2021:13:07:37 DEBUG    [loggingPython.py:82] This is a debug log
+05-06-2021:13:07:37 INFO     [loggingPython.py:83] This is an info log
+05-06-2021:13:07:37 CRITICAL [loggingPython.py:84] This is critical
+05-06-2021:13:07:37 ERROR    [loggingPython.py:85] An error occurred
