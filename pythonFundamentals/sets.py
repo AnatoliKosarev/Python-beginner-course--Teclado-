@@ -35,7 +35,7 @@ print(all_art_friends)
 science_friends = {"bruce", "clint", "tom", "tom"}
 all_friends = all_art_friends.union(science_friends) # same as all_friends = all_art_friends | science_friends
 print(all_friends)
-
+print()
 common_friends = all_art_friends.intersection(science_friends) # same as common_friends = all_art_friends & science_friends
 print(common_friends)
 

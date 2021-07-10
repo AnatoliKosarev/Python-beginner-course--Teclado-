@@ -74,7 +74,6 @@ def write_to_file(file_name, output):
         writer.writeheader() # Write a row with the field names (as specified in the constructor). не будет печатать заголовок при выводе на экран, т.к. будет знать что это заголовок
         writer.writerows(output)
 
-
 def read_from_file(file_name):
     try:
         with open(file_name, 'r') as f:

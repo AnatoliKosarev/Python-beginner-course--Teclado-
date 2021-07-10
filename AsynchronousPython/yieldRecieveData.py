@@ -3,6 +3,7 @@ from collections import deque
 friends = deque(('john', 'james', 'cliff', 'kirk', 'paul'))
 
 
+#  generators that receive data and do not generate anything and can be suspended are called co-routines
 def friend_upper():
     while friends:
         friend = friends.popleft().upper()
@@ -10,9 +11,10 @@ def friend_upper():
         print(f'{greeting} {friend}')
 
 
+#  also co-routine
 def greet(g):
     # yield from g  # same as all code after it, but as it's not intuitively clear - not supposed to be used
-    g.send(None)
+    g.send(None)  # priming friend_upper()
     while True:
         greeting = yield
         g.send(greeting)
@@ -25,9 +27,11 @@ greeter.send(None)  # priming greet(g), in greet(g) code stops at greeting = yie
 greeter.send("Hello")  # greeting = None becomes greeting = Hello and sends this value to friend_upper(), friend_upper()
 # receives value on line 9 and prints it out
 greeter.send(None)
+print("Some other task while greet() and friend_upper() are waiting...")
 # greeter.send("hi ")
 # greeter.send("hi ")
 # greeter.send("hi ")
 for x in range(3):
     greeter.send(f"hi{x}")
+
 
