@@ -5,8 +5,8 @@ def count_word_entry(word, filename):
     except FileNotFoundError:
         print(f"File {filename} doesn't exist.")
     else:
-        entry_count = contents.count(word)
-        times = "times" if entry_count > 1 else "time"
+        entry_count = contents.lower().count(word)
+        times = "time" if entry_count == 1 else "times"
         print(f"Word '{word}' is met in '{filename}' {entry_count} {times}.")
 
 
